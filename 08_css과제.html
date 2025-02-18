@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "42dot Sans", "Noto Sans", sans-serif;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            /* border: 1px solid white; */
+        }
+
+        div,
+        form,
+        input {
+            box-sizing: border-box;
+            /* border: 1px solid white; */
+        }
+
+        #wrapper {
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* 헤더부분(스포티비)
+        */
+        #header {
+            margin: 30px;
+            width: 100%;
+            height: 120px;
+            /* border: 1px solid white; */
+            display: flex;
+        }
+
+        #spotv {
+            width: 16%;
+            /* border: 1px solid white; */
+        }
+
+        #list1 {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            /* border: 1px solid white; */
+            align-items: flex-end;
+        }
+
+        #list2 {
+            display: flex;
+            width: 30%;
+            /* border: 1px solid white; */
+            margin-left: auto;
+        }
+
+        #list1 li {
+            font-size: 18px;
+            font-weight: 900;
+            height: 100%;
+            padding: 50px 20px;
+
+        }
+        #list2 li {
+            font-size: 18px;
+            font-weight: 900;
+            height: 100%;
+            flex-grow: 1;
+            padding: 50px 20px;
+        }
+        li{
+            color: white;
+        }
+        #list1 a:hover,
+        #list2 a:hover,
+        #list3 a:hover {
+            color: rgb(0, 255, 234);
+            transform: scale(1.08);
+        }
+        #list3 {
+            opacity: 0.2;
+            background-color: #ffffff;
+        }
+
+        #navigator {
+            width: 100%;
+        }
+
+        #content {
+            width: 100%;
+            height: 2450px;
+            color: white;
+        }
+
+        #content_1,
+        #content_2,
+        #content_3,
+        #content_4,
+        #content_5 {
+            height: 450px;
+            margin: 30px;
+            display: flex;
+            /* border: 1px solid white; */
+        }
+
+        #content_01 {
+            width: 30%;
+        }
+
+        #epl {
+            width: 100%;
+            height: 445px;
+            background-image: url(/epl.png);
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        #content_02 {
+            width: 30%;
+        }
+
+        #content_03 {
+            width: 30%;
+        }
+
+        #content_04 {
+            width: 30%;
+        }
+        #footer {
+            margin-top: 100px;
+            width: 100%;
+            height: 200px;
+            color: gray;
+            text-align: center;
+        }
+        /* 이미지 부분 */
+        #pic1, #pic2, #pic3, #pic4, #pic5{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="/spotv.png" alt="" id="spotv">
+            <ul id="list1" class="li1">
+                <li><a href="">홈</a></li>
+                <li><a href="">일정</a></li>
+                <li><a href="">리그</a></li>
+                <li><a href="">채널</a></li>
+                <li><a href="">프로그램</a></li>
+            </ul>
+            <ul id="list2" class="li2">
+                <li><a href="">검색</a></li>
+                <li><a href="">이용권</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">황동준님</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="navigator">
+        <div>
+            <img src="/상단바.png" alt="" id="highbar">
+        </div>
+    </div>
+    <!--epl 부분-->
+    <div id="content">
+        <div id="content_1">
+            <div id="content_01">
+                <div id="epl">
+                    <div>
+                        <img src="/epl.png" id="pic1">
+                    </div>
+                </div>
+            </div>
+            <div id="content_02">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/vjcHiHXEHYU?si=biaLM8IciW2Hkyo4"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_03">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/mwdomhYW3zg?si=oeUbNpFdp4kjAB59"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_04">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/9gh2nRLwEfg?si=2AUQGwNPova7kF-b"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--하얼빈 동계 아시아게임-->
+        <div id="content_2">
+            <div id="content_01">
+                <div>
+                    <img src="/하얼빈.png" id="pic2">
+                </div>
+            </div>
+            <div id="content_02">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/8E1esbJTm98?si=nnuPommUIKjYmy4d"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_03">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/CPC4fmfZdJI?si=suTG1Yu3Hau5kG-A"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_04">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/uEsFns2ZZ7g?si=z1mOtIASc-bt-kFt"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--nba 부분-->
+        <div id="content_3">   
+            <div id="content_01">
+                <div>
+                    <div>
+                        <img src="/nba.png" id="pic3">
+                    </div>
+                </div>
+            </div>
+            <div id="content_02">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/nwg-sDl-i54?si=Bmv7eZFZn-EeHnlo"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_03">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/xmMSgIyg1-M?si=PrMPGMgewyijPVDp"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_04">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/sjfSxZkgx-4?si=kE4fhNQ7K98-SlXC"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--축구하이라이트-->
+        <div id="content_4">
+            <div id="content_01">
+                <div>
+                    <div>
+                        <img src="/챔스.png" id="pic4">
+                    </div>
+                </div>
+            </div>
+            <div id="content_02">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/wjobxS1w0CI?si=4fbp2yniSk2rr8GP"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_03">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/OeKQRdzkGAU?si=knphg1WoZRfLwsH1"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_04">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/nniajyOrMqI?si=_BWpmkuVfZegwXaf"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--유로파리그-->
+        <div id="content_5">
+            <div id="content_01">
+                <div>
+                    <div>
+                        <img src="/유로파.png" id="pic5">
+                    </div>
+                </div>
+            </div>
+            <div id="content_02">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/hghOgWGEBGs?si=clElnq5G9ZDdqXox"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_03">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/fl5VlT0mj34?si=q4qdsNvrFuaq06yM"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div id="content_04">
+                <div id="video-01">
+                    <iframe width="460" height="440" src="https://www.youtube.com/embed/Ev-0Wgsf9Cc?si=7vG8AorOzGodM7pf"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">이용약관 &nbsp;유료서비스약관 &nbsp;개인정보 처리방침 &nbsp;청소년보호정책 &nbsp;게시물 &nbsp; 운영정책 &nbsp;이메일 &nbsp;상담
+        &nbsp;제휴문의 <br>
+        (주)스포티비 | 사업자등록번호 220-87-69074 [사업자정보확인] | 통신판매신고번호 2025-서울마포-0258 <br> <br>
+
+        서울특별시 마포구 월드컵북로56길 12, 5층 (상암동, Trutec Building) <br><br>
+
+        대표이사 오희철 | 청소년보호책임자 백정훈 | 이메일 spotv_now@spotv.net | 고객센터 1833-8910 <br><br>
+
+        ©Spotv Co., Ltd. All rights reserved.
+    </div>
+
+</body>
+
+</html>
